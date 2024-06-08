@@ -56,11 +56,11 @@ const Header = (props) => (
     <header className="p-3 bg-dark text-light">
         <div className="container">
             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-light text-decoration-none"><img src={pigeon}/></a>
+                <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-light text-decoration-none"><img src={pigeon} alt="pigeon"/></a>
                 <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" onClick={() => false} className="nav-link px-2 text-light">Новости</a></li>
-                    <li><a href="#" className="nav-link px-2 text-light">Вопросы</a></li>
-                    <li><a href="#" className="nav-link px-2 text-light">О нас</a></li>
+                    <li><a href="/news" onClick={(event) => {event.preventRefresh();}} className="nav-link px-2 text-light">Новости</a></li>
+                    <li><a href="/news" onClick={(event) => {event.preventRefresh();}} className="nav-link px-2 text-light">Вопросы</a></li>
+                    <li><a href="/news" onClick={(event) => {event.preventRefresh();}} className="nav-link px-2 text-light">О нас</a></li>
                 </ul>
                 <div className="text-end">
                     <TextEnd {...props}/>

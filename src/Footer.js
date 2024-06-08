@@ -5,13 +5,13 @@ const Footer = () => (
 				<div className="col-2">
 					<h5>Документы</h5>
 					<ul className="nav flex-column">
-						<li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Отчёт</a></li>
+						<li className="nav-item mb-2"><a href="/news" onClick={(event) => {event.preventRefresh();}} className="nav-link p-0 text-muted">Отчёт</a></li>
 					</ul>
 				</div>
 				<div className="col-4">
 					<h5>Технические задания</h5>
 					<ul className="nav flex-column">
-						<li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Лабораторный практикум</a></li>
+						<li className="nav-item mb-2"><a href="/news" onClick={(event) => {event.preventRefresh();}} className="nav-link p-0 text-muted">Лабораторный практикум</a></li>
 					</ul>
 				</div>
 				<div className="col-4 offset-1">
